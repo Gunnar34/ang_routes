@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/materialize.min.css">
+    <!-- <link rel="stylesheet" href="/vendors/boostrap.min.css"> -->
+    <script src="vendors/jquery-3.2.1.min.js"> charset="utf-8"</script>
+    <script src="vendors/materialize.min.js" charset="utf-8"></script>
+    <script src="vendors/materialize.min.css" charset="utf-8"></script>
+    <script src="vendors/angular.min.js"> charset="utf-8"</script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="scripts/script.js" charset="utf-8"></script>
+    <title></title>
+  </head>
+
+  <body ng-app="myApp">
+    <main>
+      <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Main Menu</a>
+      <h1>Favorite fictional Characters</h1>
+
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">one</a></li>
+        <li class="divider"></li>
+        <li><a href="#!/frodo">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!/sam">three</a></li>
+      </ul>
+
+      <ng-view></ng-view>
+
+
+    </main>
+  </body>
+</html>
